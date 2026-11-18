@@ -9,8 +9,12 @@ import shutil
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-OUT = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
+SRC = HERE / "entry.png"
+OUT = Path(os.environ.get("MAKEFUN_OUTPUT_DIR") or "/output")
+
+if not SRC.is_file():
+    raise SystemExit(f"missing entry image: {SRC}")
 
 OUT.mkdir(parents=True, exist_ok=True)
-shutil.copyfile(HERE / "entry.png", OUT / "entry.png")
-print(f"wrote {OUT / 'entry.png'}")
+shutil.copyfile(SRC, OUT / "entry.png")
+print(f"wrote {OUT / 'entry.png'} ({SRC.stat().st_size} bytes)")
