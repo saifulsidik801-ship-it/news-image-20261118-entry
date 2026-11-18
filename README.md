@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261118/saifulsidik801-ship-it/news-image-20261118-entry/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![reward](https://make.fun/badge/news-image-20261118/saifulsidik801-ship-it/news-image-20261118-entry/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
-One dense newspaper front page for Wednesday 18 November 2026: 40 stories from six continents on a single 1024×1024 image. Three illustrated lead stories (the US–Iran exchange over Bahrain and Qeshm, the Crimea bridge span, the first Quad summit in two years), twelve boxed stories, a by-the-numbers strip, a dotted world map with numbered pins, and a 25-item digest. Every story on the page happened, or was first reported, on 18 November 2026; disputed claims are attributed. Drawn entirely with Pillow — no network, no randomness, fully deterministic.
+A dense one-page newspaper front page summing up Wednesday 18 November 2026's world news in a single 1024×1024 image — 40 stories across 6 continents: three hand-drawn hero stories, twelve mid stories with region·topic kickers, a numbered world map, a by-the-numbers strip, and a 25-story digest, with a source footer. The program itself only copies the finished `entry.png` to the output directory, using the standard library only.
 
 ## Run it
 
